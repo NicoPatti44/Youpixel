@@ -1,0 +1,96 @@
+/* Réinitialisation des marges et des rembourrages pour le corps */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style de la section principale du jeu */
+#game-container {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style pour le titre principal */
+#game-container h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Style pour l'image à deviner */
+#image-to-guess {
+    width: 100%; /* Largeur fixe */
+    height: 400px; /* Hauteur fixe */
+    object-fit: cover; /* Remplir le conteneur sans déformer */
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    image-rendering: pixelated; /* Toujours afficher les pixels */
+}
+
+/* Style pour le champ de texte de devinette */
+#guess-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Style pour le bouton de soumission */
+#submit-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#submit-button:hover {
+    background-color: #0056b3;
+}
+
+/* Style pour le message de résultat */
+#result-message {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Style pour le score */
+#score {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Style pour les boutons de qualité */
+.quality-button {
+    padding: 10px;
+    font-size: 14px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.quality-button[data-quality="0"] { background-color: #ffcccc; }
+.quality-button[data-quality="1"] { background-color: #ff9999; }
+.quality-button[data-quality="2"] { background-color: #ff6666; }
+.quality-button[data-quality="3"] { background-color: #ff3333; }
+.quality-button[data-quality="4"] { background-color: #ff0000; }
+
+.quality-button:hover {
+    background-color: #cc0000;
+    color: #fff;
+}
